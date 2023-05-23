@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Fréquentes</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        details[open]>div {
+            animation: fade 0.4s ease-in-out;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #222;
+            color: #fff;
+            padding: 30px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer h3 {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        footer a:hover {
+            color: #ddd;
+        }
+
+        footer p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85em;
+        }
+
+        .aPropos {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-right: 70px;
+        }
+
+        .infoLegale {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+        @media screen and (max-width: 1000px) {
+            footer {
+                display: block;
+                text-align: center;
+            }
+
+            footer .logoSite {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div mt-16 max-w-3xl px-6 mx-auto lg:px-0>
+        <h1 class="text-center text-3xl sm:text-4xl font-extrabold text-gray-900">Questions Fréquentes</h1>
+        <div class="mt-10 space-y-4 px-6 mx-auto lg:px-0">
+            <details class="border-2 rounded">
+                <summary class="p-4 font-medium text-lg text-gray-900 cursor-pointer">
+                    Combien coûte Elevate Art ?
+                </summary>
+                <div class="p-4 bg-gray-100 italic">
+                    Les fonctionnalités de base de Elevate Art sont gratuites. Vous ne payez que les frais de
+                    transaction
+                    réguliers
+                    de PayDunya, et ce, uniquement quand le paiement réussit. Ces coûts sont indiqués sur la page de
+                    frais
+                    de
+                    service.
+                </div>
+            </details>
+            <details class="border-2 rounded">
+                <summary class="p-4 font-medium text-lg text-gray-900 cursor-pointer">
+                    Qui se cache derrière Elevat Art ?
+                </summary>
+                <div class="p-4 bg-gray-100 italic">
+                    Elevat Art a été créé par Arnaud et Rayane. Ces deux passionnés d'art ont uni leurs compétences et
+                    leur vision commune pour donner vie à cette plateforme dédiée à la promotion et à la découverte
+                    d'œuvres d'art. Forts de leur amour pour l'art sous toutes ses formes, ils ont travaillé ensemble
+                    pour concevoir et développer Elevat Art, offrant ainsi aux amateurs d'art du monde entier un espace
+                    unique pour explorer, apprécier et partager leur passion artistique.
+                </div>
+            </details>
+            <details class="border-2 rounded">
+                <summary class="p-4 font-medium text-lg text-gray-900 cursor-pointer">
+                    Combien coûte Elevate Art ?
+                </summary>
+                <div class="p-4 bg-gray-100 italic">
+                    Les fonctionnalités de base de Elevate Art sont gratuites. Vous ne payez que les frais de
+                    transaction
+                    réguliers
+                    de PayDunya, et ce, uniquement quand le paiement réussit. Ces coûts sont indiqués sur la page de
+                    frais
+                    de
+                    service.
+                </div>
+            </details>
+            <details class="border-2 rounded">
+                <summary class="p-4 font-medium text-lg text-gray-900 cursor-pointer">
+                    Comment créer un compte ?
+                </summary>
+                <div class="p-4 bg-gray-100 italic">
+                    C'est très simple, il vou suffit de cliquer sur le bouton en haut à droite et de cliquer soit sur
+                    inscription si vous ne l'êtes pas soit sur connexion si vous avez déjà un compte.
+                </div>
+            </details>
+            <details class="border-2 rounded">
+                <summary class="p-4 font-medium text-lg text-gray-900 cursor-pointer">
+                    Combien coûte Elevate Art ?
+                </summary>
+                <div class="p-4 bg-gray-100 italic">
+                    Les fonctionnalités de base de Elevate Art sont gratuites. Vous ne payez que les frais de
+                    transaction
+                    réguliers
+                    de PayDunya, et ce, uniquement quand le paiement réussit. Ces coûts sont indiqués sur la page de
+                    frais
+                    de
+                    service.
+                </div>
+            </details>
+        </div>
+
+    </div>
+    <footer>
+        <div class="backFooter">
+            <div class="footerInformations">
+                <h3>Informations</h3>
+                <a href="#">Comment fonctionne le site ?</a>
+            </div>
+
+            <div class="aPropos">
+                <h3>A propos</h3>
+                <a href="#">Qui somme nous ?</a>
+                <a href="#">FAQ</a>
+                <a href="#">Nous contacter</a>
+            </div>
+
+            <div class="infoLegale">
+                <p>Kadi.fr - Tous droit réservé - 2023 <br> Comparateur performant de drives gratuit & 100% indépendant
+                    des magasins.</p>
+            </div>
+
+            <img class="logoSite" src="images/kadiLogo.png" alt="Logo Site">
+        </div>
+    </footer>
+
+</body>
+
+</html>
