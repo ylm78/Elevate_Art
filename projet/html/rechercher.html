@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/rechercher.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Rechercher</title>
+</head>
+
+<body>
+    <header>
+        <a href="acceuil.html"><img src="../img/logoSite.png" alt="logo"> </a>
+        <nav>
+            <ul id="menuNav">
+                <li><a href="nouveaute.html" class="nostableaux">Nos tableaux</a></li>
+                <li><a href="rechercher.html" class="rechercher">Rechercher</a></li>
+                <li><a href="contact.html" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Choisissez votre tableau !</h1>
+        <form method="post" name="ajoutPWD" action="#" class="box" id="addPWD" onsubmit="return false">
+            <fieldset>
+                <legend>Peintre</legend>
+                <input type="text" name="q" placeholder="Nom de l'auteur">
+            </fieldset>
+
+            <fieldset>
+                <legend>Style Artistique</legend>
+                <input type="checkbox" id="abstrait" name="abstrait">
+                <label for="abstrait">Abstrait</label>
+                <input type="checkbox" id="realiste" name="realiste">
+                <label for="realiste">Réaliste</label>
+                <input type="checkbox" id="surrealiste" name="surrealiste">
+                <label for="surrealiste">Surréaliste</label>
+                <input type="checkbox" id="impressioniste" name="impressioniste">
+                <label for="impressioniste">Impressioniste</label>
+                <input type="checkbox" id="cubisme" name="cubisme">
+                <label for="cubisme">Cubisme</label>
+            </fieldset>
+            <fieldset>
+                <legend>Époque</legend>
+                <input type="checkbox" id="medieval" name="medieval">
+                <label for="medieval">Médiéval</label>
+                <input type="checkbox" id="renaissance" name="renaissance">
+                <label for="renaissance">Renaissance</label>
+                <input type="checkbox" id="moderne" name="moderne">
+                <label for="moderne">Moderne</label>
+            </fieldset>
+        </form>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Trier</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="https://twitter.com/asln78"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/ylm78/Elevate_Art"><i class='bx bxl-github'></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a class="link-1" href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Faq</a>
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p>Elevate Art &copy; 2023</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
